@@ -527,6 +527,78 @@ div.st-key-pregunta_ia button:hover,
     color: #FFFFFF !important;
 }
 
+
+/* Flecha para contraer o expandir la barra lateral */
+[data-testid="stSidebarCollapseButton"] button,
+[data-testid="stExpandSidebarButton"] button {
+    color: #BFA7FF !important;
+}
+
+/* Color del icono de la flecha */
+[data-testid="stSidebarCollapseButton"] button svg,
+[data-testid="stExpandSidebarButton"] button svg {
+    color: #BFA7FF !important;
+    fill: #BFA7FF !important;
+    stroke: #BFA7FF !important;
+}
+
+/* Efecto al pasar el cursor */
+[data-testid="stSidebarCollapseButton"] button:hover,
+[data-testid="stExpandSidebarButton"] button:hover {
+    background-color: rgba(191, 167, 255, 0.18) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Flechas y botones de la barra superior de Streamlit */
+.stApp button[kind="header"],
+.stApp button[data-testid="stBaseButton-header"] {
+    color: #D6C5FF !important;
+}
+
+/* Icono SVG de la flecha */
+.stApp button[kind="header"] svg,
+.stApp button[data-testid="stBaseButton-header"] svg {
+    color: #D6C5FF !important;
+    fill: #D6C5FF !important;
+    stroke: #D6C5FF !important;
+}
+
+/* Mejor visibilidad al pasar el cursor */
+.stApp button[kind="header"]:hover,
+.stApp button[data-testid="stBaseButton-header"]:hover {
+    background-color: rgba(214, 197, 255, 0.2) !important;
+}
+
+
+/* Cambiar el color de los iconos de la barra superior */
+[data-testid="stAppViewContainer"] header button svg,
+[data-testid="stHeader"] button svg,
+[data-testid="stSidebarCollapsedControl"] button svg,
+[data-testid="stSidebarCollapseButton"] svg {
+    color: #D6C5FF !important;
+    fill: #D6C5FF !important;
+    stroke: #D6C5FF !important;
+}
+
+/* Color del botón al pasar el cursor */
+[data-testid="stAppViewContainer"] header button:hover,
+[data-testid="stHeader"] button:hover,
+[data-testid="stSidebarCollapsedControl"] button:hover {
+    background-color: rgba(214, 197, 255, 0.2) !important;
+}
+
+/* Flecha de la barra lateral: color más intenso */
+[data-testid="stIconMaterial"] {
+    color: #B18AFF !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+}
+
+/* Al pasar el cursor, la flecha resalta más */
+[data-testid="stIconMaterial"]:hover {
+    color: #FFFFFF !important;
+}
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
